@@ -15,25 +15,24 @@ import com.example.animals.domain.Spider;
  * @author Binnur Kurt <binnur.kurt@gmail.com>
  *
  */
-public class Exercise1 {
+public class Exercise2 {
 	public static void main(String[] args) {
-		// Take a list of wild animals
+		// Take a list of pets
 		List<Animal> animals = Arrays.asList(new Cat(), new Spider(), new Cat("Tekir"), new Fish("Free Willy"),
 				new Spider(), new Fish("Jaws"));
-		
-		List <Animal> wildAnimals = new ArrayList();
+
 		List<Pet> pets = new ArrayList();
 		for (Animal animal : animals) {
 
-			if (animal instanceof Pet pet == false) {
-				wildAnimals.add(animal);
+			if (animal instanceof Pet pet) {
+				pets.add(pet);
 
 			}
 		
 		}
 		
-		for(int i=0;i<wildAnimals.size();i++) {
-			System.out.println(wildAnimals.get(i));
+		for(int i=0;i<pets.size();i++) {
+			System.out.println(pets.get(i).getName());
 		}
 	}
-	}
+}
