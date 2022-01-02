@@ -10,11 +10,6 @@ import com.example.animals.domain.Fish;
 import com.example.animals.domain.Pet;
 import com.example.animals.domain.Spider;
 
-/**
- * 
- * @author Binnur Kurt <binnur.kurt@gmail.com>
- *
- */
 public class Exercise2 {
 	public static void main(String[] args) {
 		// Take a list of pets
