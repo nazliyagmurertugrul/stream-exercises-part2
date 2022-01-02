@@ -1,0 +1,39 @@
+package com.example.animals.exercises;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import com.example.animals.domain.Animal;
+import com.example.animals.domain.Cat;
+import com.example.animals.domain.Fish;
+import com.example.animals.domain.Pet;
+import com.example.animals.domain.Spider;
+
+/**
+ * 
+ * @author Binnur Kurt <binnur.kurt@gmail.com>
+ *
+ */
+public class Exercise1 {
+	public static void main(String[] args) {
+		// Take a list of wild animals
+		List<Animal> animals = Arrays.asList(new Cat(), new Spider(), new Cat("Tekir"), new Fish("Free Willy"),
+				new Spider(), new Fish("Jaws"));
+		
+		List <Animal> wildAnimals = new ArrayList();
+		List<Pet> pets = new ArrayList();
+		for (Animal animal : animals) {
+
+			if (animal instanceof Pet pet == false) {
+				wildAnimals.add(animal);
+
+			}
+		
+		}
+		
+		for(int i=0;i<wildAnimals.size();i++) {
+			System.out.println(wildAnimals.get(i));
+		}
+	}
+	}
